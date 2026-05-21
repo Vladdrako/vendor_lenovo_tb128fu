@@ -68,6 +68,20 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/camera/portrait/PS_D0_n_v3_finger_F16.m.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/portrait/PS_D0_n_v3_finger_F16.m.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_hx83102p_boe_2k_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_hx83102p_boe_2k_video_mode_dsi_panel.xml \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_nt36523w_tm_2k_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36523w_tm_2k_video_mode_dsi_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_hx83102p_boe_tg_2k_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_hx83102p_boe_tg_2k_video_mode_dsi_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_nt36523w_tm_2k_apcf_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_nt36523w_tm_2k_apcf_video_mode_dsi_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_nt36523wh_inx_2k_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_nt36523wh_inx_2k_video_mode_dsi_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_nt36525_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_nt36525_video_mode_dsi_truly_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_fifth_firmware.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_firmware.bin \
