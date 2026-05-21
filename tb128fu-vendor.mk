@@ -69,6 +69,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_hx83102p_boe_2k_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_hx83102p_boe_2k_video_mode_dsi_panel.xml \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_nt36523w_tm_2k_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36523w_tm_2k_video_mode_dsi_panel.xml \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/lenovo/tb128fu/proprietary/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_fifth_firmware.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_firmware.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/Himax_mpfw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_mpfw.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/a610_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.b00 \
@@ -95,6 +96,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/a702_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a702_zap.b02 \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/a702_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a702_zap.elf \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/a702_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a702_zap.mdt \
+    vendor/lenovo/tb128fu/proprietary/vendor/firmware/novatek_4th_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_4th_ts_fw.bin \
+    vendor/lenovo/tb128fu/proprietary/vendor/firmware/novatek_4th_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_4th_ts_mp.bin \
+    vendor/lenovo/tb128fu/proprietary/vendor/firmware/novatek_ts_apcf_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_apcf_fw.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/aw882xx_pid_2013_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_pid_2013_acf.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/hx_criteria.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/hx_criteria.csv \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw.bin \
@@ -276,4 +280,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware.bin \
     vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/Himax_mpfw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_mpfw.bin \
+    vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/Himax_fifth_firmware.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_fifth_firmware.bin \
+    vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/novatek_4th_ts_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_4th_ts_fw.bin \
+    vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/novatek_4th_ts_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_4th_ts_mp.bin \
+    vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/novatek_ts_apcf_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_apcf_fw.bin \
+    vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_fw.bin \
+    vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/novatek_ts_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp.bin \
     vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/hx_criteria.csv:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/hx_criteria.csv
