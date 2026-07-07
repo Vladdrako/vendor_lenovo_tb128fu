@@ -83,7 +83,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/lenovo/tb128fu/proprietary/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_fifth_firmware.bin \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/thermal-engine-tb128fu.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-tb128fu.conf \
+    vendor/lenovo/tb128fu/proprietary/vendor/firmware/Himax_fifth_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_fifth_firmware.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_firmware.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/Himax_mpfw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_mpfw.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/firmware/a610_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a610_zap.b00 \
@@ -134,7 +135,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/tb128fu/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/lenovo/tb128fu/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
-    vendor/lenovo/tb128fu/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
+    vendor/lenovo/tb128fu/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
+    vendor/lenovo/tb128fu/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc
 
 PRODUCT_PACKAGES += \
     libmmcamera_cac3 \
@@ -289,7 +291,8 @@ PRODUCT_PACKAGES += \
     libsns_device_mode_skel \
     libsns_low_lat_stream_skel \
     audiosphere \
-    f2player
+    f2player \
+	thermal-engine
 
 PRODUCT_COPY_FILES += \
     vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware.bin \
