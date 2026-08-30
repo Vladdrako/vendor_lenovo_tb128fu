@@ -224,8 +224,12 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libacdb-fts.so"],
 			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libc++", "libc", "libm", "libdl", ],
 		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libacdb-fts.so"],
+			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libc++", "libc", "libm", "libdl", ],
+		},
 	},
-	compile_multilib: "32",
+	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
 }
@@ -241,8 +245,14 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libacdbloader.so"],
 			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libtinyalsa", "libacdbrtac", "libadiertac", "libacdb-fts", "libion", "libc++", "libc", "libm", "libdl", ],
 		},
-	},
-	compile_multilib: "32",
+		android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libacdbloader.so",
+            ],
+            shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libtinyalsa", "libacdbrtac", "libadiertac", "libacdb-fts", "libion", "libc++", "libc", "libm", "libdl", ],
+        },
+    },
+	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
 }
@@ -258,8 +268,12 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libacdbrtac.so"],
 			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libc++", "libc", "libm", "libdl", ],
 		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libacdbrtac.so"],
+			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libc++", "libc", "libm", "libdl", ],
+		},
 	},
-	compile_multilib: "32",
+	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
 }
@@ -275,8 +289,12 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libadiertac.so"],
 			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libc++", "libc", "libm", "libdl", ],
 		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libadiertac.so"],
+			shared_libs: ["libcutils", "libutils", "liblog", "libaudcal", "libc++", "libc", "libm", "libdl", ],
+		},
 	},
-	compile_multilib: "32",
+	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
 }
@@ -309,27 +327,43 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libaudcal.so"],
 			shared_libs: ["libutils", "liblog", "libdiag", "libc++", "libc", "libm", "libdl", ],
 		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libaudcal.so"],
+			shared_libs: ["libutils", "liblog", "libdiag", "libc++", "libc", "libm", "libdl", ],
+		},
 	},
-	compile_multilib: "32",
+	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
-	name: "libaudio_log_utils",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libaudio_log_utils.so"],
-			shared_libs: ["libutils", "libcutils", "libexpat", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
+    name: "libaudio_log_utils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    shared_libs: [
+        "libc",
+        "libc++",
+        "libcutils",
+        "libdl",
+        "libexpat",
+        "liblog",
+        "libm",
+        "libutils",
+    ],
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/vendor/lib64/libaudio_log_utils.so"],
+        },
+        android_arm: {
+            srcs: ["proprietary/vendor/lib/libaudio_log_utils.so"],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
 }
 
 cc_prebuilt_library_shared {

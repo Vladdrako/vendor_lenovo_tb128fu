@@ -292,7 +292,7 @@ PRODUCT_PACKAGES += \
     libsns_low_lat_stream_skel \
     audiosphere \
     f2player \
-	thermal-engine
+    thermal-engine
 
 PRODUCT_COPY_FILES += \
     vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware.bin \
