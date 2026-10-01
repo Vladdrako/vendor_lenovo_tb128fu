@@ -146,8 +146,6 @@ PRODUCT_PACKAGES += \
     libofflinelog \
     libopencv \
     libthermalclient \
-    audio.primary.bengal \
-    liba2dpoffload \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -158,18 +156,9 @@ PRODUCT_PACKAGES += \
     libaudioalsa \
     libaudioconfigstore \
     libaudioparsers \
-    libbatterylistener \
-    libcirrusspkrprot \
-    libcomprcapture \
     libdrc \
-    libexthwplugin \
-    libhdmiedid \
     libhdmipassthru \
-    libhfp \
     libqtigef \
-    libsndmonitor \
-    libspkrprot \
-    libssrec \
     libsurround_3mic_proc \
     libasphere \
     libqcbassboost \

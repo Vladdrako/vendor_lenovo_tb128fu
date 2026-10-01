@@ -178,40 +178,10 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "audio.primary.bengal",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/audio.primary.bengal.so"],
-			shared_libs: ["libbase", "liblog", "libcutils", "libtinyalsa", "libtinycompress", "libaudioroute", "libaudioutils", "libexpat", "libhidlbase", "libprocessgroup", "libutils", "libaudio_log_utils", "android.hardware.power@1.2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
+// audio.primary.bengal - removed prebuilt, built from source via
+// hardware/qcom-caf/sm8250/audio/hal instead (old blob was Android 11/API 30, incompatible)
 
-cc_prebuilt_library_shared {
-	name: "liba2dpoffload",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/liba2dpoffload.so"],
-			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
+// liba2dpoffload - removed prebuilt, built from source
 
 cc_prebuilt_library_shared {
 	name: "libacdb-fts",
@@ -417,56 +387,11 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "libbatterylistener",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libbatterylistener.so"],
-			shared_libs: ["android.hardware.health@1.0", "android.hardware.health@2.0", "android.hardware.power@1.2", "libaudioroute", "libaudioutils", "libbase", "libcutils", "libexpat", "libhidlbase", "liblog", "libtinyalsa", "libtinycompress", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
+// libbatterylistener - removed prebuilt, built from source
 
-cc_prebuilt_library_shared {
-	name: "libcirrusspkrprot",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcirrusspkrprot.so"],
-			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libaudioroute", "libexpat", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
+// libcirrusspkrprot - removed prebuilt, built from source
 
-cc_prebuilt_library_shared {
-	name: "libcomprcapture",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcomprcapture.so"],
-			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
+// libcomprcapture - removed prebuilt, built from source
 
 cc_prebuilt_library_shared {
 	name: "libdrc",
@@ -485,39 +410,9 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "libexthwplugin",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libexthwplugin.so"],
-			shared_libs: ["libaudioroute", "libaudioutils", "libcutils", "libexpat", "liblog", "libtinyalsa", "libtinycompress", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
+// libexthwplugin - removed prebuilt, built from source
 
-cc_prebuilt_library_shared {
-	name: "libhdmiedid",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libhdmiedid.so"],
-			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
+// libhdmiedid - removed prebuilt, built from source
 
 cc_prebuilt_library_shared {
 	name: "libhdmipassthru",
@@ -536,22 +431,7 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "libhfp",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libhfp.so"],
-			shared_libs: ["libaudioroute", "libaudioutils", "libcutils", "libexpat", "liblog", "libtinyalsa", "libtinycompress", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
+// libhfp - removed prebuilt, built from source
 
 cc_prebuilt_library_shared {
 	name: "libqtigef",
@@ -570,56 +450,11 @@ cc_prebuilt_library_shared {
 	soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "libsndmonitor",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsndmonitor.so"],
-			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
+// libsndmonitor - removed prebuilt, built from source
 
-cc_prebuilt_library_shared {
-	name: "libspkrprot",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libspkrprot.so"],
-			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
+// libspkrprot - removed prebuilt, built from source
 
-cc_prebuilt_library_shared {
-	name: "libssrec",
-	owner: "lenovo",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libssrec.so"],
-			shared_libs: ["libaudioutils", "libcutils", "liblog", "libtinyalsa", "libtinycompress", "libaudioroute", "libexpat", "libprocessgroup", "libaudio_log_utils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
+// libssrec - removed prebuilt, built from source
 
 cc_prebuilt_library_shared {
 	name: "libsurround_3mic_proc",
