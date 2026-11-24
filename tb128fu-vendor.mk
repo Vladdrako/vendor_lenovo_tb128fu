@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/lenovo/tb128fu
 
 PRODUCT_COPY_FILES += \
-    vendor/lenovo/tb128fu/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/acdbdata/IDP/IDP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_General_cal.acdb \
     vendor/lenovo/tb128fu/proprietary/vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Global_cal.acdb \
@@ -160,11 +159,6 @@ PRODUCT_PACKAGES += \
     libhdmipassthru \
     libqtigef \
     libsurround_3mic_proc \
-    libasphere \
-    libqcbassboost \
-    libqcreverb \
-    libqcvirt \
-    libshoebox \
     com.qti.sensor.gc08a3_lce_front_ii \
     com.qti.sensor.gc08a3_qtech_back_ii \
     com.qti.sensor.ov13b10_oflim_back_i \
@@ -279,7 +273,6 @@ PRODUCT_PACKAGES += \
     libscveT2T_skel \
     libsns_device_mode_skel \
     libsns_low_lat_stream_skel \
-    audiosphere \
     f2player \
     thermal-engine
 
