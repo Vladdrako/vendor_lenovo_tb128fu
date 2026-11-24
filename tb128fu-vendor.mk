@@ -268,8 +268,7 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_skel \
     libscveT2T_skel \
     libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
-    f2player
+    libsns_low_lat_stream_skel
 
 PRODUCT_COPY_FILES += \
     vendor/lenovo/tb128fu/proprietary/recovery/root/vendor/firmware/Himax_firmware.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_firmware.bin \
